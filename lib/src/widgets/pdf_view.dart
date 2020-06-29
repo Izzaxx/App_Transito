@@ -37,6 +37,9 @@ class _PdfViewState extends State<PdfView> {
   Widget build(BuildContext context) {
     return _loading ? Center(
       child: CircularProgressIndicator(),
-    ) : PDFViewer(document: _doc,);
+    ) : 
+    PDFViewer(
+      document: _doc,
+    );
   }
 }
