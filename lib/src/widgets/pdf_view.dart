@@ -10,7 +10,7 @@ class PdfView extends StatefulWidget {
 
 class _PdfViewState extends State<PdfView> {
 
-  String pdf = "assets/ley de trancito de sonora.pdf";
+  String pdfassets = "assets/ley de trancito de sonora.pdf";
   PDFDocument _doc;
   bool _loading;
   
@@ -24,7 +24,9 @@ class _PdfViewState extends State<PdfView> {
     setState(() {
       _loading = true;
     });
-    final doc = await PDFDocument.fromAsset(pdf);
+    final doc = await PDFDocument.fromAsset(pdfassets);
+    if (doc == null)
+      throw FlutterError('No se cargo el archivo');
     setState(() {
       _doc=doc;
       _loading = false;
