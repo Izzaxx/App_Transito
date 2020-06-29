@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:trancito_app/src/pages/home_page.dart';
 
-//Metodo principal
+// Metodo principal
 
 void main() => runApp(MyApp());
 
