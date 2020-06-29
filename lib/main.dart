@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:trancito_app/src/pages/home_page.dart';
 
+//Metodo principal
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
