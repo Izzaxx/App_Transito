@@ -11,6 +11,7 @@ class Senales {
       nombre: 'Alto', 
       descripcion: 'Es para hacer alto xd'
     ),
+    
     const Senales(
       nombre: 'Cuidado',
       descripcion: 'Es para tener cuidado xdd'

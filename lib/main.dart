@@ -7,6 +7,7 @@ import 'package:trancito_app/src/pages/preguntas_frecuentes.dart';
 import 'package:trancito_app/src/pages/salario_minimo.dart';
 import 'package:trancito_app/src/pages/senales_transito.dart';
 import 'package:trancito_app/pruebas/senales_vista.dart';
+import 'package:trancito_app/pruebas/senales_datos.dart';
 
 
 void main() => runApp(MyApp());
