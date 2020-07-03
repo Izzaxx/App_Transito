@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 
-class _SenalesItems extends StatelessWidget {
-  final Senales _contact;
-
-  _SenalesItems(this._contact);
-
+class SenalesItems extends StatelessWidget {
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,7 +25,7 @@ class _SenalesItems extends StatelessWidget {
                     style: TextStyle(color: Colors.black.withOpacity(0.6)),
                   ),
                 ),
-                Image.asset('assets/cantfly.png'),
+                Image.asset('images/cantfly.png'),
               ],
             ),
           ),
