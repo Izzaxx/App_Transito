@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:trancito_app/pruebas/senales_datos.dart';
 
+
+
 class SenalesItems extends StatelessWidget {
   final Senales _senal;
 
@@ -9,25 +11,18 @@ class SenalesItems extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: ListView(
+    return Card(
+      clipBehavior: Clip.antiAlias,
+      child: Column(
         children: [
-          Card(
-            clipBehavior: Clip.antiAlias,
-            child: Column(
-              children: [
-                ListTile(
-                  title: const Text(this._senal.nombre),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Text(
-                    this._senal.descripcion,
-                    style: TextStyle(color: Colors.black.withOpacity(0.6)),
-                  ),
-                ),
-                Image.asset('assets/cantfly.png'),
-              ],
+          ListTile(
+            title: Text(_senal.nombre),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Text(
+              _senal.descripcion,
+              style: TextStyle(color: Colors.black.withOpacity(0.6)),
             ),
           ),
         ],
@@ -36,24 +31,26 @@ class SenalesItems extends StatelessWidget {
   }
 }
 
-class ContactList extends StatelessWidget {
+class SenalList extends StatelessWidget {
 
-  final List<Card> _senal;
+  final List<Senales> _senal;
 
-  ContactList(this._senal);
+  SenalList(this._senal);
 
   @override
   Widget build(BuildContext context) {
     return ListView(
           padding: EdgeInsets.symmetric(vertical: 8.0),
-          children: _buildContactList()
+          children: _buildSenalList()
         );
   }
 
-  List<SenalesItems> _buildContactList() {
+  List<SenalesItems> _buildSenalList() {
     return _senal.map((senal) => SenalesItems(senal))
-                    .toList();
+                  .toList();
   }
 
 }
+
+
 

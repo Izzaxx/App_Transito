@@ -1,0 +1,10 @@
+{
+    "name" : "Señales de transito",
+    "info_senales" : [
+        {
+            "title"  : "Senal 1",
+            "descri" : "Esta es la descripcion de la senal 1",
+            "image"  : "images/cantfly.png"
+        }
+    ]
+}
