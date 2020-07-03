@@ -22,6 +22,9 @@ class AppDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.assignment),
             title: Text("Leyes de trancito"),
+            onTap: (){
+              Navigator.pushNamed(context, '/');
+            },
           ),
           Divider(),
           ListTile(

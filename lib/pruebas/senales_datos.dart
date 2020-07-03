@@ -15,12 +15,12 @@ class Senales {
     const Senales(
       nombre      : 'Alto', 
       descripcion : 'Es para hacer alto xd',
-      imagen      : Image(image: AssetImage('assets/cantfly.png')),
+      imagen      : Image(image: AssetImage('images/cantfly.png')),
     ),
     
     const Senales(
       nombre: 'Cuidado',
       descripcion: 'Es para tener cuidado xdd',
-      imagen      : Image(image: AssetImage('assets/cantfly.png'))
+      imagen      : Image(image: AssetImage('images/cantfly.png'))
     )
   ];

@@ -14,7 +14,7 @@ class SenalesItems extends StatelessWidget {
     return Card(
       clipBehavior: Clip.antiAlias,
       child: Column(
-        children: [
+        children: <Widget>[
           ListTile(
             title: Text(_senal.nombre),
           ),
@@ -25,6 +25,7 @@ class SenalesItems extends StatelessWidget {
               style: TextStyle(color: Colors.black.withOpacity(0.6)),
             ),
           ),
+          _senal.imagen
         ],
       ),
     );
@@ -40,9 +41,9 @@ class SenalList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-          padding: EdgeInsets.symmetric(vertical: 8.0),
-          children: _buildSenalList()
-        );
+      padding: EdgeInsets.symmetric(vertical: 8.0),
+      children: _buildSenalList()
+    );
   }
 
   List<SenalesItems> _buildSenalList() {
