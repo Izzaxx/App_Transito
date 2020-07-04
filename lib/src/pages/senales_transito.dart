@@ -11,9 +11,9 @@ class SenalesTransito extends StatelessWidget {
     return Container(
       child: Scaffold(
         appBar: AppBar(
-          title: Text("Senales de transito"),
+          title: Text("Señales de transito"),
         ),
-        body: SenalList(xSenales),
+        body: SenalList(xSenales), 
       ),
     );
   }
