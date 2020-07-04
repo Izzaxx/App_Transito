@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'package:trancito_app/src/widgets/comandancia_card/comandancias_card.dart';
+import 'package:trancito_app/src/widgets/comandancia_card/comandancias_data.dart';
+
 class Comandancias extends StatelessWidget {
   const Comandancias({Key key}) : super(key: key);
 
@@ -8,8 +11,9 @@ class Comandancias extends StatelessWidget {
     return Container(
       child: Scaffold(
         appBar: AppBar(
-          title: Text("Comandancias"),
-        )
+          title: Text("Comandancias de Hermosillo"),
+        ),
+        body: ComandanciasList(xComandancias),
       ),
     );
   }

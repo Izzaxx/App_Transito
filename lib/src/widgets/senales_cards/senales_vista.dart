@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:trancito_app/pruebas/senales_datos.dart';
+import 'package:trancito_app/src/widgets/senales_cards/senales_datos.dart';
 
 
 
